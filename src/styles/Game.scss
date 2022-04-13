@@ -1,0 +1,42 @@
+.gameContainer{
+    width: 50vw;
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    font-size:2rem;
+    border: 2px solid black;
+    border-radius: 5%;
+    .gameItem{
+        margin:2em 2em;
+    cursor: pointer;
+    }
+    .active{
+        position: relative;
+        cursor: default;
+        color: grey;
+        
+            display: flex;
+            justify-content: center;
+           
+    }
+    .good{
+        color: chartreuse;
+        &::before{
+            color: green;
+            content: 'Good';
+            position: absolute;
+            top: -2rem;
+        }
+    }
+    .bad{
+        color: crimson;
+        &::before{
+            color: red;
+            content: 'Bad';
+            position: absolute;
+            top: -2rem;
+        }
+    }
+}
